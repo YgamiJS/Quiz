@@ -1,16 +1,17 @@
 import { FC } from "react";
+import { IQuestion } from "../../types/types";
 
 interface result {
   correct: number;
-  length: number;
+  data: IQuestion[];
 }
 
-const Result: FC<result> = ({ correct, length }) => {
+const Result: FC<result> = ({ correct, data }) => {
   return (
     <div className="">
       <img src="" alt="" />
       <h2>
-        Вы отгадали {correct} ответа из {length}.
+        Вы отгадали {correct} ответа из {data.length}.
       </h2>
     </div>
   );

@@ -5,11 +5,11 @@ interface question {
   question: IQuestion;
   handleClickVariant: (index: number | string) => void;
   step: number;
-  length: number;
+  data: IQuestion[];
 }
 
-const Game: FC<question> = ({ question, handleClickVariant, step, length }) => {
-  const procenttage = Math.round((step / length) * 100);
+const Game: FC<question> = ({ question, handleClickVariant, step, data }) => {
+  const procenttage = Math.round((step / data.length) * 100);
   console.log(procenttage);
   return (
     <div className="bg-green-600 w-[300px] border-solid border-8 border-red-400">

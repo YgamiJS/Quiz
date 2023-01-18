@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { IQuestion } from "./types/types";
 import Game from "./Components/Game/Game";
 import Result from "./Components/Result/Result";
@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   const [step, setStep] = useState<number>(0);
   const [correct, setCorrect] = useState<number>(0);
-  const questions: IQuestion[] = data;
+  const questions: IQuestion[] = useMemo(() => data, [data]);
   const question: IQuestion = questions[step];
 
   const handleClickVariant = (index: number | string) => {
@@ -22,10 +22,10 @@ function App() {
           step={step}
           question={question}
           handleClickVariant={handleClickVariant}
-          length={questions.length}
+          data={data}
         />
       ) : (
-        <Result correct={correct} length={questions.length} />
+        <Result correct={correct} data={data} />
       )}
     </div>
   );
