@@ -4,6 +4,8 @@ import Game from "./Components/Game/Game";
 import Result from "./Components/Result/Result";
 import { data } from "./data";
 import "./App.css";
+import Wrapper from "./Components/Wrapper/Wrapper";
+
 function App() {
   const [step, setStep] = useState<number>(0);
   const [correct, setCorrect] = useState<number>(0);
@@ -16,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center bg-green-600">
+    <Wrapper>
       {step !== questions.length ? (
         <Game
           step={step}
@@ -27,7 +29,7 @@ function App() {
       ) : (
         <Result correct={correct} data={data} />
       )}
-    </div>
+    </Wrapper>
   );
 }
 

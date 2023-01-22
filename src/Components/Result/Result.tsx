@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { IQuestion } from "../../types/types";
 
 interface result {
@@ -6,7 +5,7 @@ interface result {
   data: IQuestion[];
 }
 
-const Result: FC<result> = ({ correct, data }) => {
+const Result = ({ correct, data }: result) => {
   return (
     <div className="">
       <img src="" alt="" />

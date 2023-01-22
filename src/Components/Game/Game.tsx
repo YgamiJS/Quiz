@@ -8,21 +8,22 @@ interface question {
   data: IQuestion[];
 }
 
-const Game: FC<question> = ({ question, handleClickVariant, step, data }) => {
+const Game = ({ question, handleClickVariant, step, data }: question) => {
   const procenttage = Math.round((step / data.length) * 100);
-  console.log(procenttage);
+
   return (
-    <div className="bg-green-600 w-[300px] border-solid border-8 border-red-400">
+    <div className="bg-gray-700 border-solid border-8 border-gray-300 p-[15px] rounded-[15px] w-full h-[80%]">
       <div className="min-w-full">
         <div
           style={{ width: `${procenttage}%` }}
           className={
-            "h-1 bg-blue-500 transition-all transition-duraction-300 ease-linear"
+            "h-1 bg-green-500 transition-all transition-duraction-300 ease-linear rounded-[15px]"
           }
         ></div>
       </div>
-      <h1>{question.title}</h1>
+      <h1 className="text-white text-[28px] font-black">{question.title}</h1>
       <ul
+        className="text-white cursor-pointer text-[18px] font-normal"
         onClick={(event: React.PointerEvent<HTMLUListElement>) =>
           handleClickVariant((event.target as HTMLLIElement).id)
         }
