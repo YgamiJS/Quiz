@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Wrapper from "../Wrapper/Wrapper";
+import { Wrapper } from "@/Components/Wrapper/Wrapper";
 
-const Start = () => {
+export const Start = () => {
   return (
     <Wrapper>
       <Link
@@ -13,5 +13,3 @@ const Start = () => {
     </Wrapper>
   );
 };
-
-export default Start;

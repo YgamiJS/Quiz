@@ -1,14 +1,19 @@
 import React, { FC } from "react";
-import { IQuestion } from "../../types/types";
+import { IQuestion } from "@/types/types";
 
 interface question {
   question: IQuestion;
-  handleClickVariant: (index: number | string) => void;
+  handleClickVariant: (index: string) => void;
   step: number;
   data: IQuestion[];
 }
 
-const Game = ({ question, handleClickVariant, step, data }: question) => {
+export const Game = ({
+  question,
+  handleClickVariant,
+  step,
+  data,
+}: question) => {
   const procenttage = Math.round((step / data.length) * 100);
 
   return (
@@ -37,5 +42,3 @@ const Game = ({ question, handleClickVariant, step, data }: question) => {
     </div>
   );
 };
-
-export default Game;

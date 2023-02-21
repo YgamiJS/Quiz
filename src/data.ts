@@ -1,24 +1,24 @@
-import { IQuestion } from "./types/types";
+import { IQuestion } from "@/types/types";
 
 export const data: IQuestion[] = [
   {
     title: "Какой рост у Хаги Ваги?",
     variants: ["1 метр.", "2 метра.", "3 метра.", "4 метра."],
-    correct: 3,
+    correct: "3",
     image: "img/img1.jpg",
   },
 
   {
     title: "Как зовут женскую версию Хаги Ваги?",
     variants: ["Муси Пуси.", "Куси Туси.", "Киси Миси.", "Попи Топи."],
-    correct: 3,
+    correct: "3",
     image: "img/img2.jpg",
   },
 
   {
     title: "Сколько лет Хаги Ваги?",
     variants: ["64.", "55.", "46.", "37."],
-    correct: 4,
+    correct: "4",
     image: "img/img3.jpg",
   },
 
@@ -30,21 +30,21 @@ export const data: IQuestion[] = [
       "Просто друзья.",
       "Они не знакомы.",
     ],
-    correct: 1,
+    correct: "1",
     image: "img/img4.jpg",
   },
 
   {
     title: "Хаги Ваги это игрушка для ..?",
     variants: ["Танцев.", "Обнимашек.", "Целований.", "Разговоров."],
-    correct: 2,
+    correct: "2",
     image: "img/img5.jpg",
   },
 
   {
     title: "Как зовут эту куклу?",
     variants: ["Паппи.", "Поппи.", "Пуппи.", "Пиппи."],
-    correct: 2,
+    correct: "2",
     image: "img/img6.jpg",
   },
 
@@ -56,7 +56,7 @@ export const data: IQuestion[] = [
       "Playtime Co.",
       "Plartime Co.",
     ],
-    correct: 3,
+    correct: "3",
     image: "img/img7.jpg",
   },
 
@@ -68,7 +68,7 @@ export const data: IQuestion[] = [
       "Exp.  1-0-0-7.",
       "Exp.  1-0-0-6.",
     ],
-    correct: 4,
+    correct: "4",
     image: "img/img8.jpg",
   },
 
@@ -80,14 +80,14 @@ export const data: IQuestion[] = [
       "Загрызает.",
       "Разрывает на куски.",
     ],
-    correct: 1,
+    correct: "1",
     image: "img/img9.jpg",
   },
 
   {
     title: "Какого цвета правая рука рюкзака хватателя?",
     variants: ["Зеленая.", "Синяя.", "Красная.", "Желтая."],
-    correct: 3,
+    correct: "3",
     image: "img/img10.jpg",
   },
 
@@ -99,7 +99,7 @@ export const data: IQuestion[] = [
       "Человек внутри игрушки.",
       "Неизвестно существо.",
     ],
-    correct: 3,
+    correct: "3",
     image: "img/img11.jpg",
   },
 
@@ -111,28 +111,28 @@ export const data: IQuestion[] = [
       "Спастись.",
       "Подружться с ним.",
     ],
-    correct: 1,
+    correct: "1",
     image: "img/img12.jpg",
   },
 
   {
     title: "Какая кукла была самой подавленной?",
     variants: ["Вики.", "Джени.", "Хики.", "Нани."],
-    correct: 4,
+    correct: "4",
     image: "img/img13.jpg",
   },
 
   {
     title: "Кто основатель этой компании?",
     variants: ["Лейт Пьер.", "Тонни Ниер.", "Ферридо Тиер.", "Элиио Людвиг."],
-    correct: 2,
+    correct: "2",
     image: "img/img14.jpg",
   },
 
   {
     title: "Откуда игрок чирпает информацию?",
     variants: ["Из писем.", "Из головы.", "Из видео кассет.", "Из рисунков."],
-    correct: 1,
+    correct: "1",
     image: "img/img15.jpg",
   },
 ];

@@ -1,11 +1,11 @@
-import { IQuestion } from "../../types/types";
+import { IQuestion } from "@/types/types";
 
 interface result {
   correct: number;
   data: IQuestion[];
 }
 
-const Result = ({ correct, data }: result) => {
+export const Result = ({ correct, data }: result) => {
   return (
     <div className="">
       <img src="" alt="" />
@@ -15,5 +15,3 @@ const Result = ({ correct, data }: result) => {
     </div>
   );
 };
-
-export default Result;

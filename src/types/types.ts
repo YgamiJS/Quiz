@@ -1,6 +1,6 @@
 export interface IQuestion {
   title: string;
   variants: string[];
-  correct: number;
+  correct: string;
   image?: string;
 }
